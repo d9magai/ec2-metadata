@@ -4,11 +4,11 @@
 #
 # no install wget
 
-tool_path = "#{default['ec2-metadata']['install_dir']}/#{default['ec2metadata']['toolname']}"
+tool_path = "#{node['ec2-metadata']['install_dir']}/#{node['ec2metadata']['toolname']}"
 
-execute "install #{default['ec2-metadata']['toolname']}" do
+execute "install #{node['ec2-metadata']['toolname']}" do
   command <<-EOH
-    wget #{default['ec2-metadata']['download_url']} -P #{default['ec2metadata']['install_dir']} -O #{default['ec2metadata']['toolname']}
+    wget #{node['ec2-metadata']['download_url']} -P #{node['ec2metadata']['install_dir']} -O #{node['ec2metadata']['toolname']}
     chmod +x "#{tool_path}"
   EOH
   not_if { File.exist?(tool_path) }
