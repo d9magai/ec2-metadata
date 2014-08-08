@@ -18,9 +18,9 @@ Attributes
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['ec2metadata']['toolpath']</tt></td>
+    <td><tt>['ec2metadata']['install_dir']</tt></td>
     <td>String</td>
-    <td>path to tool</td>
+    <td>install directory</td>
     <td><tt>/usr/local/bin</tt></td>
   </tr>
   <tr>
