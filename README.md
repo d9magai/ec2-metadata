@@ -18,6 +18,12 @@ Attributes
     <th>Default</th>
   </tr>
   <tr>
+    <td><tt>['ec2-metadata']['download_url']</tt></td>
+    <td>String</td>
+    <td>download url</td>
+    <td><tt>http://s3.amazonaws.com/ec2metadata/ec2-metadata</tt></td>
+  </tr>
+  <tr>
     <td><tt>['ec2-metadata']['install_dir']</tt></td>
     <td>String</td>
     <td>install directory</td>
