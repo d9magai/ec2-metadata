@@ -18,10 +18,16 @@ Attributes
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['ec2metadata']['path']</tt></td>
+    <td><tt>['ec2metadata']['toolpath']</tt></td>
     <td>String</td>
     <td>path to tool</td>
     <td><tt>/usr/local/bin</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['ec2metadata']['toolname']</tt></td>
+    <td>String</td>
+    <td>name of tool</td>
+    <td><tt>ec2-metadata</tt></td>
   </tr>
 </table>
 
