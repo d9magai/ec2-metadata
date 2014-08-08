@@ -8,11 +8,12 @@ package 'wget' do
   action :install
 end
 
+tool_path = "#{default['ec2metadata']['install_dir']}/#{default['ec2metadata']['toolname']}"
+
 execute "install ec2-metadata" do
   command <<-EOH
-    wget http://s3.amazonaws.com/ec2metadata/ec2-metadata -P /usr/local/bin/
-    chmod +x /usr/local/bin/ec2-metadata
+    wget http://s3.amazonaws.com/ec2metadata/ec2-metadata -P #{default['ec2metadata']['install_dir']} -O #{default['ec2metadata']['toolname']}
+    chmod +x "#{tool_path}"
   EOH
-  not_if { File.exist?("/usr/local/bin/ec2-metadata") }
+  not_if { File.exist?(tool_path) }
 end
-
