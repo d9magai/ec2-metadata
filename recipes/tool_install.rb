@@ -13,3 +13,4 @@ execute "install #{node['ec2-metadata']['toolname']}" do
   EOH
   not_if { File.exist?(tool_path) }
 end
+
