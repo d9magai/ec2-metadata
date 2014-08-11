@@ -9,3 +9,4 @@ package 'wget' do
 end
 
 include_recipe "ec2-metadata::tool_install"
+include_recipe "ec2-metadata::ec2-userdata"
