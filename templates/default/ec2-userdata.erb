@@ -1,0 +1,3 @@
+#!/bin/bash
+<%= node['ec2-metadata']['install_dir'] %>/<%= node['ec2-metadata']['toolname'] %> -d | sed 's/^user-data: //'
+
