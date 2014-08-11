@@ -35,6 +35,12 @@ Attributes
     <td>name of tool</td>
     <td><tt>ec2-metadata</tt></td>
   </tr>
+  <tr>
+    <td><tt>['ec2-metadata']['userdata_toolname']</tt></td>
+    <td>String</td>
+    <td>name of userdata tool</td>
+    <td><tt>ec2-userdata</tt></td>
+  </tr>
 </table>
 
 Usage
